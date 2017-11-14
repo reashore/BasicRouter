@@ -6,15 +6,9 @@ const Topics = ({ match }) =>
     <div>
         <h2>Topics</h2>
         <ul>
-            <li>
-                <Link to={`${match.url}/Rendering`}>Rendering with React</Link>
-            </li>
-            <li>
-                <Link to={`${match.url}/Components`}>Components</Link>
-            </li>
-            <li>
-                <Link to={`${match.url}/Props-vs-state`}>Props v. State</Link>
-            </li>
+            <li><Link to={`${match.url}/Rendering`}>Rendering with React</Link></li>
+            <li><Link to={`${match.url}/Components`}>Components</Link></li>
+            <li><Link to={`${match.url}/Props-vs-state`}>Props v. State</Link></li>
         </ul>
 
         <Route path={`${match.url}/:topicId`} component={Topic} />

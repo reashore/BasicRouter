@@ -14,8 +14,6 @@ const BasicRouter = () => (
                 <li><Link to="/topics">Topics</Link></li>
             </ul>
 
-            <hr />
-
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/topics" component={Topics} />
