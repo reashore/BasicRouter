@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import Topic from './Topic';
 
 const Topics = ({ match }) => 
@@ -7,13 +7,13 @@ const Topics = ({ match }) =>
         <h2>Topics</h2>
         <ul>
             <li>
-                <Link to={`${match.url}/rendering`}>Rendering with React</Link>
+                <Link to={`${match.url}/Rendering`}>Rendering with React</Link>
             </li>
             <li>
-                <Link to={`${match.url}/components`}>Components</Link>
+                <Link to={`${match.url}/Components`}>Components</Link>
             </li>
             <li>
-                <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+                <Link to={`${match.url}/Props-vs-state`}>Props v. State</Link>
             </li>
         </ul>
 

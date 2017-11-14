@@ -1,13 +1,12 @@
 import React from 'react';
 import '../index.css';
-import registerServiceWorker from './registerServiceWorker';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Topics from './Topics';
 import About from './About';
 
 const BasicRouter = () => (
-    <Router>
+    <BrowserRouter>
         <div>
             <ul>
                 <li><Link to="/">Home</Link></li>
@@ -21,7 +20,7 @@ const BasicRouter = () => (
             <Route path="/about" component={About} />
             <Route path="/topics" component={Topics} />
         </div>
-    </Router>
+    </BrowserRouter>
 )
 
 export default BasicRouter;
