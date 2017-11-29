@@ -1,9 +1,10 @@
+
 import React from 'react';
-import '../index.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Topics from './Topics';
 import About from './About';
+import '../index.css';
 
 const BasicRouter = () => (
     <BrowserRouter>
